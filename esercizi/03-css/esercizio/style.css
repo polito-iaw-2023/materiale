@@ -1,0 +1,49 @@
+#img-logo {
+    width: 20%;
+}
+
+#img-poli {
+    width: 100%;
+    height: 7.5em;
+    object-fit: cover;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    font-family: 'Roboto', serif;
+}
+
+footer {
+    font-size: small;
+    background-color: darkslategray;
+    padding: 1em;
+    color: white;
+    position: absolute;
+}
+
+footer li {
+    display: inline;
+    margin: 0rem 0.5em;
+}
+
+header nav,
+button {
+    display: inline;
+    margin: 0rem 0.5em;
+}
+
+button {
+    background-color: blue;
+    height: 3em;
+    padding: 0rem 0.5em;
+    color: antiquewhite;
+    border: 0px;
+    border-radius: 0.5em;
+}
+
+.btn-recensione {
+    background-color: green;
+}
