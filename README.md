@@ -8,11 +8,13 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
 * [Architetture Web](./slide/01-web-architectures.pdf)
 * [HTML](./slide/02-html.pdf)
   * [Esempio ed esercizio](./esercizi/02-html/)
-* CSS
+* [CSS](./slide/03-css.pdf)
+  * [Esempio ed esercizio](./esercizi/03-css/)
+* [More CSS](./slide/04-more-css.pdf)
 
 
 ## Laboratori
-* Laboratorio 1
+* [Laboratorio 1](./laboratori/lab-01/)
 * Laboratorio 2
 * Laboratorio 3
 * Laboratorio 4
