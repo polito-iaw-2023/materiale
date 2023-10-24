@@ -1,0 +1,34 @@
+.contenitore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkseagreen;
+    height: 50vw;
+}
+
+.contenitore div {
+    background-color: aquamarine;
+    margin: 0.5em;
+}
+
+#one {
+    flex:4;
+}
+
+#two {
+    flex:1;
+}
+
+#three {
+    flex:1;
+}
+
+@media(max-width:900px){
+    .contenitore{
+        background-color: red;
+    }
+
+    #three {
+        display: none;
+    }
+}
