@@ -11,11 +11,12 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
 * [CSS](./slide/03-css.pdf)
   * [Esempio ed esercizio](./esercizi/03-css/)
 * [More CSS](./slide/04-more-css.pdf)
+  * [Esempio ed esercizio](./esercizi/04-more-css/)
 
 
 ## Laboratori
 * [Laboratorio 1](./laboratori/lab-01/)
-* Laboratorio 2
+* [Laboratorio 2](./laboratori/lab-02/)
 * Laboratorio 3
 * Laboratorio 4
 * Laboratorio 5
