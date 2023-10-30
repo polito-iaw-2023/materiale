@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: gainsboro;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    flex-direction: column;
+}
+
+#content-hdr {
+    display: flex;
+}
+
+#content-hdr * {
+    margin: 0 0.5rem;
+}
+
+#img-logo{
+    width: 20%;
+}
+#nav-links{
+    background-color: cadetblue;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+#img-poli {
+    width: 100%;
+    height: 7.5em;
+    object-fit: cover;
+}
+
+main {
+    display: flex;
+}
