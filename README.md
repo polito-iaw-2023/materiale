@@ -12,12 +12,14 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
   * [Esempio ed esercizio](./esercizi/03-css/)
 * [More CSS](./slide/04-more-css.pdf)
   * [Esempio ed esercizio](./esercizi/04-more-css/)
+* Framework CSS: Bootstrap
+  * [Esercizio](./esercizi/05-bootstrap/)
 
 
 ## Laboratori
 * [Laboratorio 1](./laboratori/lab-01/)
 * [Laboratorio 2](./laboratori/lab-02/)
-* Laboratorio 3
+* [Laboratorio 3](./laboratori/lab-03/)
 * Laboratorio 4
 * Laboratorio 5
 * Laboratorio 6
