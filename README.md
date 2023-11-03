@@ -13,7 +13,9 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
 * [More CSS](./slide/04-more-css.pdf)
   * [Esempio ed esercizio](./esercizi/04-more-css/)
 * Framework CSS: Bootstrap
-  * [Esercizio](./esercizi/05-bootstrap/)
+  * [Esercizio](./esercizi/04b-bootstrap/)
+* [Progettare per il web](./slide/05-ia-visual-design.pdf)
+  * [Esercizio](./esercizi/05-ia-visual-design/)
 
 
 ## Laboratori
