@@ -15,7 +15,8 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
 * Framework CSS: Bootstrap
   * [Esercizio](./esercizi/04b-bootstrap/)
 * [Progettare per il web](./slide/05-ia-visual-design.pdf)
-  * [Esercizio](./esercizi/05-ia-visual-design/)
+* [Flask](./slide/06-flask.pdf)
+
 
 
 ## Laboratori
@@ -23,7 +24,7 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
 * [Laboratorio 2](./laboratori/lab-02/)
 * [Laboratorio 3](./laboratori/lab-03/)
 * [Laboratorio 4](./laboratori/lab-04/)
-* Laboratorio 5
+* [Laboratorio 5](./laboratori/lab-05/)
 * Laboratorio 6
 * Laboratorio 7
 * Laboratorio 8
