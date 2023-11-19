@@ -16,7 +16,7 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
   * [Esercizio](./esercizi/04b-bootstrap/)
 * [Progettare per il web](./slide/05-ia-visual-design.pdf)
 * [Flask](./slide/06-flask.pdf)
-
+  * [Esempi ed esercizio](./esercizi/06-flask/)
 
 
 ## Laboratori
