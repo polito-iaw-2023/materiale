@@ -1,8 +1,6 @@
-<html>
-  <head>
-    <title>MangiaTO - Home</title>
-  </head>
-  <body>
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
     <h1>MangiaTO</h1>
     <p>Benvenuto sul sito della mensa del Politecnico di Torino.</p>
     <h2>Menu</h2>
@@ -15,5 +13,4 @@
       <img src="{{ url_for('static', filename='logo.png') }}">
     </p>
     <p>&copy; <a href="{{ url_for('about') }}">Introduzione alle Applicazioni Web</a></p>
-  </body>
-</html>
+{% endblock %}
