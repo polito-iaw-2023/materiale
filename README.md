@@ -25,7 +25,7 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
 * [Laboratorio 3](./laboratori/lab-03/)
 * [Laboratorio 4](./laboratori/lab-04/)
 * [Laboratorio 5](./laboratori/lab-05/)
-* Laboratorio 6
+* [Laboratorio 6](./laboratori/lab-06/)
 * Laboratorio 7
 * Laboratorio 8
 * Laboratorio 9
