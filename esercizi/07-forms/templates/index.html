@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <h1>MangiaTO</h1>
+    <p>Benvenuto sul sito della mensa del Politecnico di Torino.</p>
+    <h2>Menu</h2>
+    <ul>
+      {% for plate in first %}
+      <li>{{ plate.name | e }}</li>
+      {% endfor %}
+    </ul>
+    <p>
+      <img src="{{ url_for('static', filename='logo.png') }}">
+    </p>   
+{% endblock %}
