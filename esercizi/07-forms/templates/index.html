@@ -1,15 +1,31 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block content %}
-    <h1>MangiaTO</h1>
-    <p>Benvenuto sul sito della mensa del Politecnico di Torino.</p>
-    <h2>Menu</h2>
-    <ul>
-      {% for plate in first %}
-      <li>{{ plate.name | e }}</li>
-      {% endfor %}
-    </ul>
-    <p>
-      <img src="{{ url_for('static', filename='logo.png') }}">
-    </p>   
+<h1>MangiaTO</h1>
+<p>Benvenuto sul sito della mensa del Politecnico di Torino.</p>
+<h2>Menu</h2>
+<ul>
+  {% for plate in first %}
+  <li>{{ plate.name | e }}</li>
+  {% endfor %}
+</ul>
+<form action="recensioni/new" method="POST" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="txtNomeCognome" class="form-label">Nome e cognome</label>
+    <input type="text" class="form-control" id="txtNomeCognome" name="nomecognome" required minlength="10"
+      maxlength="100">
+  </div>
+  <div class="mb-3">
+    <label for="txtMatricola" class="form-label">Matricola</label>
+    <input type="text" class="form-control" id="txtMatricola" name="matricola" required minlength="7" maxlength="7">
+  </div>
+  <div class="mb-3">
+    <label for="txtRecensione" class="form-label">Recensione</label>
+    <textarea id="txtRecensione" class="form-control" name="recensione" required rows="3"></textarea>
+  </div>
+  <div class="mb-3">
+    <input type="file" id="foto" class="form-control" name="foto" required></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit">Invia recensione</button>
+</form>
 {% endblock %}

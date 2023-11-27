@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<ul>
+    {% for recensione in recensioni %}
+    <li>{{ recensione.nomecognome | e }}:{{ recensione.matricola | e }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
