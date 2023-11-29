@@ -17,6 +17,8 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
 * [Progettare per il web](./slide/05-ia-visual-design.pdf)
 * [Flask](./slide/06-flask.pdf)
   * [Esempi ed esercizio](./esercizi/06-flask/)
+* [Form](./slide/07-forms.pdf)
+  * [Esempio](./esercizi/07-forms/)
 
 
 ## Laboratori
@@ -26,7 +28,7 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
 * [Laboratorio 4](./laboratori/lab-04/)
 * [Laboratorio 5](./laboratori/lab-05/)
 * [Laboratorio 6](./laboratori/lab-06/)
-* Laboratorio 7
+* [Laboratorio 7](./laboratori/lab-07/)
 * Laboratorio 8
 * Laboratorio 9
 * Laboratorio 10
