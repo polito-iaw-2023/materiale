@@ -1,7 +1,23 @@
 {% extends "base.html" %}
 {% block title %}{{plate.name}}{% endblock %}
 {% block content %}
-  <div class="col">
-    Questa è la pagina dedicata al "{{plate.name}}".
+<div class="col">
+  Questa è la pagina dedicata al "{{plate.name}}".
+</div>
+<form action="/recensioni/new" method="post" enctype="multipart/form-data">
+
+  <div class="mb-3">
+    <label for="txtRecensione" class="form-label">Inserisci il tuo commento</label>
+    <textarea id="txtRecensione" name="recensione" class="form-control" rows="3" required></textarea>
   </div>
+
+  <div class="mb-3">
+    <label for="imgRecensione" class="form-label">Carica una foto</label>
+    <input type="file" id="imgRecensione" name="imgRecensione" class="form-control">
+  </div>
+
+  <button type="reset" class="btn btn-danger">Reset</button>
+  <button type="submit" class="btn btn-primary">Invia</button>
+
+</form>
 {% endblock %}
