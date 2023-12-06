@@ -19,7 +19,10 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
   * [Esempi ed esercizio](./esercizi/06-flask/)
 * [Form](./slide/07-forms.pdf)
   * [Esempio](./esercizi/07-forms/)
-
+* Form avanzato
+  * [Esercizio](./esercizi/08-forms-avanzato/)
+* [Interazione col database](./slide/08-database.pdf)
+  * [Esempio](./esercizi/08-database/)
 
 ## Laboratori
 * [Laboratorio 1](./laboratori/lab-01/)
@@ -29,7 +32,7 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
 * [Laboratorio 5](./laboratori/lab-05/)
 * [Laboratorio 6](./laboratori/lab-06/)
 * [Laboratorio 7](./laboratori/lab-07/)
-* Laboratorio 8
+* [Laboratorio 8](./laboratori/lab-08/)
 * Laboratorio 9
 * Laboratorio 10
 * Laboratorio 11
