@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<aside class="col-4">
+  <h3>Avvisi</h3>
+  <div class="alert alert-info" role="alert">
+    <h4 class="alert-heading">Promozione tonno</h4>
+    <p>Solo per oggi, tutti i piatti a base di tonno sono scontati del 25%</p>
+    <hr>
+    <p class="mb-0">Approfittane!</p>
+  </div>
+</aside>
+
+<main class="col-8">
+  <section class="row">
+    <h3>Menù di oggi</h3>
+    {% for course in menu %}
+    <div class="col-4">
+      <article class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{course.type}}</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          {% for plate in course.plates %}
+          <li class="list-group-item"><a href="{{ url_for('first_plate', id=loop.index) }}">{{plate.name}}</a> {% if
+            plate.promotion==True%}<span class="badge rounded-pill text-bg-success">Sconto</span>{% endif %}</li>
+          {% endfor %}
+        </ul>
+      </article>
+    </div>
+    {% endfor %}
+  </section>
+
+  <div class="row mt-5">
+    <section class="col">
+      <h3>Recensioni</h3>
+      <ul>
+        {% for rec in recensioni %}
+        <li>{{rec.recensione}}</li>
+        {% endfor %}
+      </ul>
+      <button type="button" class="btn btn-outline-primary">Nuova recensione...</button>
+    </section>
+  </div>
+</main>
+{% endblock %}
