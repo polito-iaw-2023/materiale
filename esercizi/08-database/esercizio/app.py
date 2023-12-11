@@ -1,5 +1,6 @@
 # import module
 from flask import Flask, render_template, request, redirect, url_for
+import piatti_dao
 
 # create the application
 app = Flask(__name__)
@@ -15,7 +16,14 @@ recensioni = [{'id':0, 'recensione': 'Recensione 0'}]
 # define the homepage
 @app.route('/')
 def index():
-  return render_template('index.html', menu=menu, recensioni=recensioni)
+  piatti_db = piatti_dao.get_piatti()
+  return render_template('index.html', piatti=piatti_db, recensioni=recensioni)
+
+@app.route('/piatti/<int:id>')
+def piatto_singolo(id):
+  recensioni_db = piatti_dao.get_recensioni(id)
+  return render_template('single.html', recensioni=recensioni_db)
+
 
 # define the about page
 @app.route('/about')
@@ -45,6 +53,9 @@ def add_recensione():
   recensione['id'] = recensioni[-1]['id'] + 1
 
   recensioni.append(recensione)
+
+  rec = {'testo_recensione': 'test', 'url_foto': 'test_url', 'valutazione': 4, 'piatto': 1}
+  piatti_dao.add_recensione(rec)
 
   app.logger.info(recensione)
 
