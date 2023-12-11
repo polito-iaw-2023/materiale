@@ -23,6 +23,7 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
   * [Esercizio](./esercizi/08-forms-avanzato/)
 * [Interazione col database](./slide/08-database.pdf)
   * [Esempio](./esercizi/08-database/)
+  * [Esercizio](./esercizi/08-database/esercizio)
 
 ## Laboratori
 * [Laboratorio 1](./laboratori/lab-01/)
@@ -33,7 +34,7 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
 * [Laboratorio 6](./laboratori/lab-06/)
 * [Laboratorio 7](./laboratori/lab-07/)
 * [Laboratorio 8](./laboratori/lab-08/)
-* Laboratorio 9
+* [Laboratorio 9](./laboratori/lab-09/)
 * Laboratorio 10
 * Laboratorio 11
 * Laboratorio 12
