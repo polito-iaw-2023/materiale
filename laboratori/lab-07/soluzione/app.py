@@ -43,38 +43,36 @@ def single_post(id):
     return render_template('post.html', post=post)
 
 
-@app.route('/posts/new', methods=['GET', 'POST'])
+@app.route('/posts/new', methods=['POST'])
 def new_post():
-    if request.method == 'POST':
             
-            post = request.form.to_dict()
+    post = request.form.to_dict()
 
-            if post['usrname'] not in [d['usrname'] for d in posts]:
-                app.logger.error("Non esiste l'utente!")
-                return redirect(url_for('home'))
+    if post['usrname'] not in [d['usrname'] for d in posts]:
+        app.logger.error("Non esiste l'utente!")
+        return redirect(url_for('home'))
             
-            if post['post'] == '':
-                app.logger.error('Il post non può essere vuoto!')
-                return redirect(url_for('home'))
+    if post['post'] == '':
+        app.logger.error('Il post non può essere vuoto!')
+        return redirect(url_for('home'))
 
-            if post['date'] == '':
-                app.logger.error('Devi selezionare una data')
-                return redirect(url_for('home'))
+    if post['date'] == '':
+        app.logger.error('Devi selezionare una data')
+        return redirect(url_for('home'))
 
-            if datetime.strptime(post['date'], '%Y-%m-%d').date() < date.today():
-                app.logger.error('Data errata')
-                return redirect(url_for('home'))
+    if datetime.strptime(post['date'], '%Y-%m-%d').date() < date.today():
+        app.logger.error('Data errata')
+        return redirect(url_for('home'))
 
-
-            post_image = request.files['image']
-            if post_image:
-                post_image.save('static/' + post_image.filename)
-                post['img'] = post_image.filename
+    post_image = request.files['image']
+    if post_image:
+        post_image.save('static/' + post_image.filename)
+        post['img'] = post_image.filename
             
-            post['id'] = posts[-1]['id'] + 1
-            post['usrimg'] = [p['usrimg'] for p in posts if p['usrname'] == post['usrname']][0]
+    post['id'] = posts[-1]['id'] + 1
+    post['usrimg'] = [p['usrimg'] for p in posts if p['usrname'] == post['usrname']][0]
 
-            posts.append(post)
+    posts.append(post)
             
     return redirect(url_for('home'))
 
