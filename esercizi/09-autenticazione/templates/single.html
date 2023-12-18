@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}{{piatto.nome_piatto}}{% endblock %}
+{% block content %}
+
+<div class="col">
+  <h1 class="display-4">{{piatto.nome_piatto}}</h1>
+
+  <div class="row mt-5">
+    <section class="mb-5">
+      <h3>Recensioni</h3>
+      <ul>
+        {% for rec in recensioni %}
+        <li>{{rec.testo_recensione}}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    <section>
+      <h4>Aggiungi una recensione</h4>
+      <form action="/recensioni/new" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label for="txtRecensione" class="form-label">Inserisci il tuo commento</label>
+          <textarea id="txtRecensione" name="recensione" class="form-control" rows="3" required></textarea>
+        </div>
+      
+        <div class="mb-3">
+          <label for="imgRecensione" class="form-label">Carica una foto</label>
+          <input type="file" id="imgRecensione" name="imgRecensione" class="form-control">
+        </div>
+      
+        <button type="reset" class="btn btn-danger">Reset</button>
+        <button type="submit" class="btn btn-primary">Invia</button>
+      </form>
+    </section>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<aside class="col-4">
+  <h3>Login</h3>
+  <div class="bg-light p-4 border rounded mb-3">
+    <form action="" method="">
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email</label>
+        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" name="email">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="passwordInput" class="form-label">Password</label>
+        <input type="password" class="form-control" id="passwordInput" name="password">
+      </div>
+      <small>Non hai ancora un account? <a href="/iscriviti">Registrati</a></small>
+      <button type="submit" class="btn btn-primary mt-3">Accedi</button>
+    </form>
+  </div>
+  <h3>Avvisi</h3>
+  <div class="alert alert-info" role="alert">
+    <h4 class="alert-heading">Promozione tonno</h4>
+    <p>Solo per oggi, tutti i piatti a base di tonno sono scontati del 25%</p>
+    <hr>
+    <p class="mb-0">Approfittane!</p>
+  </div>
+</aside>
+
+<main class="col-8">
+  <section class="row">
+    <h3>Menù di oggi</h3>
+    <div class="col-4">
+      <article class="card">
+        <div class="card-body">
+          <h5 class="card-title">Primi</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          {% for piatto in piatti %}
+          {% if piatto.categoria == 1 %}
+          <li class="list-group-item"><a href="piatti/{{piatto.id}}">{{piatto.nome_piatto}}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </article>
+    </div>
+    <div class="col-4">
+      <article class="card">
+        <div class="card-body">
+          <h5 class="card-title">Secondi</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          {% for piatto in piatti %}
+          {% if piatto.categoria == 2 %}
+          <li class="list-group-item"><a href="piatti/{{piatto.id}}">{{piatto.nome_piatto}}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </article>
+    </div>
+    <div class="col-4">
+      <article class="card">
+        <div class="card-body">
+          <h5 class="card-title">Contorni</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          {% for piatto in piatti %}
+          {% if piatto.categoria == 3 %}
+          <li class="list-group-item"><a href="piatti/{{piatto.id}}">{{piatto.nome_piatto}}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </article>
+    </div>
+  </section>
+</main>
+{% endblock %}
