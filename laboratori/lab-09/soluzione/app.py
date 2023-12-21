@@ -45,7 +45,7 @@ def new_post():
     post_image = request.files['immagine_post']
     if post_image:
         post_image.save('static/' + post_image.filename)
-        post['img'] = post_image.filename
+        post['immagine_post'] = post_image.filename
             
     success = posts_dao.add_post(post)
 
