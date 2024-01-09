@@ -24,6 +24,8 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
 * [Interazione col database](./slide/08-database.pdf)
   * [Esempio](./esercizi/08-database/)
   * [Esercizio](./esercizi/08-database/esercizio)
+* [Sessioni e autenticazione](./slide/09-autenticazione.pdf)
+  * [Esercizio](./esercizi/09-autenticazione)
 
 ## Laboratori
 * [Laboratorio 1](./laboratori/lab-01/)
@@ -35,9 +37,8 @@ Materiale per il corso _[Introduzione alle Applicazioni Web](https://github.com/
 * [Laboratorio 7](./laboratori/lab-07/)
 * [Laboratorio 8](./laboratori/lab-08/)
 * [Laboratorio 9](./laboratori/lab-09/)
-* Laboratorio 10
-* Laboratorio 11
-* Laboratorio 12
+* [Laboratorio 10](./laboratori/lab-10/)
+* [Laboratorio 11](./laboratori/lab-11/)
 
 
 ## Software utilizzato
